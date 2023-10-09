@@ -29,8 +29,8 @@ Student.prototype.getAverage = function () {
   return gradePointAverage;
 }
 
-Student.prototype.excluded = function (reason) {
+Student.prototype.exclude = function (reason) {
   delete this.subject;
   delete this.marks;
-  this.exclude = reason;
+  this.excluded = reason;
 }
