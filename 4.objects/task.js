@@ -29,7 +29,7 @@ Student.prototype.getAverage = function () {
   return gradePointAverage;
 }
 
-Student.prototype.exclude = function (reason) {
+Student.prototype.excluded = function (reason) {
   delete this.subject;
   delete this.marks;
   this.exclude = reason;
